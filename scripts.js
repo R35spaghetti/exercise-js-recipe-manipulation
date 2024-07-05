@@ -26,3 +26,18 @@ console.log(recipeName);
      url: imgUrl
  };
  console.log(imageInfo);
+
+const pasteIngredientAmount = document.querySelector(".ingredients-list-paste");
+console.log(pasteIngredientAmount.children.length);
+console.log(pasteIngredientAmount.children[3].innerHTML);
+
+const instructionsContainer = document.querySelector(".instructions-list");
+
+
+let ArrayOfInstructions = [{
+
+    order: instructionsContainer.children,
+    instructions: instructionsContainer.innerText
+ }]
+
+ ArrayOfInstructions.forEach(instruction => {console.log(instruction)});
