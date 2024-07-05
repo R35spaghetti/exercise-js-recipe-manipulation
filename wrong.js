@@ -30,3 +30,6 @@ thirdIngredient.textContent = "3tsk vaniljsocker";
 const missingIngredientElement = document.createElement('li');
 missingIngredientElement.textContent = "400g naturell philadelphiaost";
 ingredientsListPaste.appendChild(missingIngredientElement);
+
+const elementInstructions = document.querySelector(".instructions.shadow");
+elementInstructions.classList.remove("shadow");
