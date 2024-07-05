@@ -39,3 +39,8 @@ const instruktioner = document.querySelector(".instructions-list");
 const instruktionerItem = instruktioner.querySelectorAll("li")
 instruktionerItem[1].textContent = "Separera ägggulor och äggvitor. Äggvitorna lägger du i en stor bunke, äggulorna i en liten bunke.";
 instruktionerItem[8].textContent = "Ställ in i frysen över natten.";
+
+const elements = document.querySelectorAll('.to-bottom, .to-paste .how-to-do');
+elements.forEach(element => {
+    element.style.fontSize = "18px";
+});
