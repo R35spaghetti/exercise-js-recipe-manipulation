@@ -27,9 +27,15 @@ ingredientsListBottom.innerHTML = correctContent;
 const ingredientsListPaste = document.querySelector(".ingredients-list-paste");
 const thirdIngredient = ingredientsListPaste.children[2];
 thirdIngredient.textContent = "3tsk vaniljsocker";
+
 const missingIngredientElement = document.createElement('li');
 missingIngredientElement.textContent = "400g naturell philadelphiaost";
 ingredientsListPaste.appendChild(missingIngredientElement);
 
 const elementInstructions = document.querySelector(".instructions.shadow");
 elementInstructions.classList.remove("shadow");
+
+const instruktioner = document.querySelector(".instructions-list");
+const instruktionerItem = instruktioner.querySelectorAll("li")
+instruktionerItem[1].textContent = "Separera ägggulor och äggvitor. Äggvitorna lägger du i en stor bunke, äggulorna i en liten bunke.";
+instruktionerItem[8].textContent = "Ställ in i frysen över natten.";
